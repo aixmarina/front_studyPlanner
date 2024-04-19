@@ -2,7 +2,7 @@ import {Landing} from "./components/landing/Landing.tsx";
 import {Route, Routes} from "react-router-dom";
 import {Registro} from "./components/registro/Registro.tsx";
 import {Login} from "./components/registro/Login.tsx";
-import {StudyPlanner} from "./components/studyPlanner/studyPlanner.tsx";
+import {StudyPlanner} from "./components/studyPlanner/StudyPlanner.tsx";
 
 function App() {
 
