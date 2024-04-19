@@ -1,4 +1,5 @@
 import {Button} from "../Button.tsx";
+import {Link} from "react-router-dom";
 
 export const Navbar = () => {
 
@@ -10,8 +11,12 @@ export const Navbar = () => {
           <img src="/StudyPlanner.svg" alt="logo"/>
         </div>
         <div className="flex gap-5">
-          <Button title="Registrarse" type="primary" />
-          <Button title="Iniciar sesión" type="secondary" />
+          <Link to={ "/registro" }>
+            <Button type="primary">Registrarse</Button>
+          </Link>
+          <Link to={ "/login" }>
+            <Button type="secondary">Iniciar Sesión</Button>
+          </Link>
         </div>
       </nav>
     </header>

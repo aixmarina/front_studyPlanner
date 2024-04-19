@@ -1,10 +1,19 @@
 import {Landing} from "./components/landing/Landing.tsx";
+import {Route, Routes} from "react-router-dom";
+import {Registro} from "./components/registro/Registro.tsx";
+import {Login} from "./components/registro/Login.tsx";
+import {StudyPlanner} from "./components/studyPlanner/studyPlanner.tsx";
 
 function App() {
 
   return (
     <>
-      <Landing />
+      <Routes>
+        <Route path="/" element={ <Landing /> } />
+        <Route path="/registro" element={ <Registro /> } />
+        <Route path="/login" element={ <Login /> } />
+        <Route path="/home" element={ <StudyPlanner />} />
+      </Routes>
     </>
   )
 }

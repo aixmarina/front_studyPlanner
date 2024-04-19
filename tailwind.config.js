@@ -11,6 +11,7 @@ export default {
         'secondary' : '#F5EDCC',
         'tertiary' : '#6D6E5E',
         'pale' : '#F2F0EB',
+        'pale2' : '#F2F2f2',
         'dark' : '#282828'
       },
       backgroundImage: {
