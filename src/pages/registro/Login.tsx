@@ -1,6 +1,6 @@
-import {Button} from "../Button.tsx";
+import {Button} from "../../components/Button.tsx";
 import {Link} from "react-router-dom";
-import {Form} from "./Form.tsx";
+import {Form} from "../../components/Form.tsx";
 
 export const Login = () => {
 

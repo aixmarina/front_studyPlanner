@@ -1,4 +1,4 @@
-import {Button} from "../Button.tsx";
+import {Button} from "../../components/Button.tsx";
 import {Link} from "react-router-dom";
 
 export const Navbar = () => {

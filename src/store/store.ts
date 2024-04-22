@@ -1,8 +1,8 @@
 import {Store, configureStore} from "@reduxjs/toolkit";
-import componentSlice from "./componentSlice.ts";
 import {RootState} from "../types/types.ts";
+import componentSlice from "./componentSlice.ts";
 
-const store: Store<RootState> = configureStore({
+const store: Store<RootState> | void = configureStore({
   reducer: {
     componentSlice
   }
