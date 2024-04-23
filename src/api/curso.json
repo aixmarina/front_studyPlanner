@@ -1,0 +1,11 @@
+{
+  "id": "C001",
+  "nombre": "Ingeniería Informática",
+  "centro_de_estudios": "Universidad de Alicante",
+  "anios_de_duracion": 4,
+  "tipo_de_evaluacion": "Semestres",
+  "primer_anio_academico": 2021,
+  "ultimo_anio_academico": 2025,
+  "anio_actual": 3,
+  "semestre_actual": 2
+}

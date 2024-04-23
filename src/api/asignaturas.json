@@ -1,0 +1,226 @@
+[
+  {
+    "nombre": "DAW",
+    "descripcion": "Despliegue de Aplicaciones Web",
+    "anio_cursa": 1,
+    "eval_cursa": 1,
+    "color": "#EF5A3C"
+  },
+  {
+    "nombre": "Ingeniería del Software",
+    "descripcion": "Diseño y desarrollo de software",
+    "anio_cursa": 1,
+    "eval_cursa": 1,
+    "color": "#F5EDCC"
+  },
+  {
+    "nombre": "Bases de Datos",
+    "descripcion": "Gestión y manipulación de datos",
+    "anio_cursa": 1,
+    "eval_cursa": 1,
+    "color": "#6D6E5E"
+  },
+  {
+    "nombre": "Redes de Computadoras",
+    "descripcion": "Configuración y administración de redes",
+    "anio_cursa": 1,
+    "eval_cursa": 1,
+    "color": "#3C5AEF"
+  },
+  {
+    "nombre": "Introducción a la Programación",
+    "descripcion": "Principios básicos de programación",
+    "anio_cursa": 1,
+    "eval_cursa": 1,
+    "color": "#8F6D5E"
+  },
+  {
+    "nombre": "Matemáticas para Computación",
+    "descripcion": "Conceptos matemáticos aplicados a la computación",
+    "anio_cursa": 1,
+    "eval_cursa": 1,
+    "color": "#4F8E42"
+  },
+  {
+    "nombre": "Sistemas Operativos",
+    "descripcion": "Funcionamiento y administración de sistemas operativos",
+    "anio_cursa": 1,
+    "eval_cursa": 2,
+    "color": "#3C5AEF"
+  },
+  {
+    "nombre": "Estructuras de Datos",
+    "descripcion": "Organización y manipulación de datos",
+    "anio_cursa": 1,
+    "eval_cursa": 2,
+    "color": "#8F6D5E"
+  },
+  {
+    "nombre": "Programación Avanzada",
+    "descripcion": "Desarrollo de aplicaciones complejas",
+    "anio_cursa": 1,
+    "eval_cursa": 2,
+    "color": "#4F8E42"
+  },
+  {
+    "nombre": "Arquitectura de Computadoras",
+    "descripcion": "Estructura y funcionamiento de computadoras",
+    "anio_cursa": 1,
+    "eval_cursa": 2,
+    "color": "#F5EDCC"
+  },
+  {
+    "nombre": "Inglés Técnico",
+    "descripcion": "Comunicación técnica en inglés",
+    "anio_cursa": 1,
+    "eval_cursa": 2,
+    "color": "#6D6E5E"
+  },
+  {
+    "nombre": "Diseño de Interfaces de Usuario",
+    "descripcion": "Creación de interfaces amigables",
+    "anio_cursa": 2,
+    "eval_cursa": 1,
+    "color": "#3C5AEF"
+  },
+  {
+    "nombre": "Programación Web Avanzada",
+    "descripcion": "Desarrollo de aplicaciones web complejas",
+    "anio_cursa": 2,
+    "eval_cursa": 1,
+    "color": "#8F6D5E"
+  },
+  {
+    "nombre": "Inteligencia Artificial",
+    "descripcion": "Simulación de procesos de inteligencia humana",
+    "anio_cursa": 2,
+    "eval_cursa": 1,
+    "color": "#4F8E42"
+  },
+  {
+    "nombre": "Análisis y Diseño de Algoritmos",
+    "descripcion": "Optimización de algoritmos computacionales",
+    "anio_cursa": 2,
+    "eval_cursa": 1,
+    "color": "#F5EDCC"
+  },
+  {
+    "nombre": "Seguridad Informática",
+    "descripcion": "Protección de sistemas informáticos",
+    "anio_cursa": 2,
+    "eval_cursa": 1,
+    "color": "#6D6E5E"
+  },
+  {
+    "nombre": "Programación Concurrente y Distribuida",
+    "descripcion": "Desarrollo de aplicaciones multiusuario",
+    "anio_cursa": 2,
+    "eval_cursa": 2,
+    "color": "#3C5AEF"
+  },
+  {
+    "nombre": "Sistemas de Información",
+    "descripcion": "Análisis y desarrollo de sistemas de información",
+    "anio_cursa": 2,
+    "eval_cursa": 2,
+    "color": "#8F6D5E"
+  },
+  {
+    "nombre": "Tecnologías Emergentes",
+    "descripcion": "Exploración de nuevas tecnologías",
+    "anio_cursa": 2,
+    "eval_cursa": 2,
+    "color": "#4F8E42"
+  },
+  {
+    "nombre": "Ética en la Informática",
+    "descripcion": "Consideraciones éticas en el uso de la informática",
+    "anio_cursa": 2,
+    "eval_cursa": 2,
+    "color": "#F5EDCC"
+  },
+  {
+    "nombre": "Desarrollo Ágil de Software",
+    "descripcion": "Metodologías ágiles de desarrollo de software",
+    "anio_cursa": 2,
+    "eval_cursa": 2,
+    "color": "#6D6E5E"
+  },
+  {
+    "nombre": "Diseño de Sistemas Distribuidos",
+    "descripcion": "Arquitectura de sistemas distribuidos",
+    "anio_cursa": 3,
+    "eval_cursa": 1,
+    "color": "#3C5AEF"
+  },
+  {
+    "nombre": "Ingeniería de Requisitos",
+    "descripcion": "Análisis y gestión de requisitos de software",
+    "anio_cursa": 3,
+    "eval_cursa": 1,
+    "color": "#8F6D5E"
+  },
+  {
+    "nombre": "Gestión de Proyectos de Software",
+    "descripcion": "Planificación y dirección de proyectos de software",
+    "anio_cursa": 3,
+    "eval_cursa": 1,
+    "color": "#4F8E42"
+  },
+  {
+    "nombre": "Auditoría Informática",
+    "descripcion": "Evaluación y control de sistemas informáticos",
+    "anio_cursa": 3,
+    "eval_cursa": 1,
+    "color": "#F5EDCC"
+  },
+  {
+    "nombre": "Desarrollo de Aplicaciones Móviles",
+    "descripcion": "Creación de aplicaciones para dispositivos móviles",
+    "anio_cursa": 3,
+    "eval_cursa": 1,
+    "color": "#6D6E5E"
+  },
+  {
+    "nombre": "Tecnología Blockchain",
+    "descripcion": "Fundamentos y aplicaciones de la tecnología blockchain",
+    "anio_cursa": 3,
+    "eval_cursa": 2,
+    "color": "#3C5AEF"
+  },
+  {
+    "nombre": "Big Data Analytics",
+    "descripcion": "Análisis de grandes volúmenes de datos",
+    "anio_cursa": 3,
+    "eval_cursa": 2,
+    "color": "#8F6D5E"
+  },
+  {
+    "nombre": "Computación Cuántica",
+    "descripcion": "Principios y aplicaciones de la computación cuántica",
+    "anio_cursa": 3,
+    "eval_cursa": 2,
+    "color": "#4F8E42"
+  },
+  {
+    "nombre": "Ciberseguridad Avanzada",
+    "descripcion": "Defensa contra amenazas avanzadas en línea",
+    "anio_cursa": 3,
+    "eval_cursa": 2,
+    "color": "#F5EDCC"
+  },
+  {
+    "nombre": "Desarrollo de Videojuegos",
+    "descripcion": "Creación de juegos electrónicos",
+    "anio_cursa": 3,
+    "eval_cursa": 2,
+    "color": "#6D6E5E"
+  },
+  {
+    "nombre": "Realidad Virtual y Aumentada",
+    "descripcion": "Tecnologías inmersivas para experiencias virtuales",
+    "anio_cursa": 3,
+    "eval_cursa": 2,
+    "color": "#3C5AEF"
+  }
+]
