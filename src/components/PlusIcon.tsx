@@ -1,4 +1,4 @@
-import {Props} from "./aside/Icons/interface.ts";
+import {Props} from "../types/interfaces.ts";
 
 export const PlusIcon = ({ className }: Props) => {
   return (

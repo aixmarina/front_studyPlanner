@@ -36,7 +36,7 @@ export const Login = () => {
     */}
             </div>
             <div className="mb-6 text-center">
-              <Button type="primary" classes="w-full focus:outline-none focus:shadow-outline">Inicia Sesión</Button>
+              <Button type="primary" className="w-full focus:outline-none focus:shadow-outline">Inicia Sesión</Button>
             </div>
             <hr className="mb-6 border-t"/>
             <div className="text-center">

@@ -1,5 +1,5 @@
-import {Aside} from "./Aside.tsx";
-import {Container} from "./Container.tsx";
+import {Aside} from "./components/aside/Aside.tsx";
+import {Container} from "./components/container/Container.tsx";
 
 export const StudyPlanner = () => {
   return (

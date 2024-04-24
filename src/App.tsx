@@ -3,15 +3,15 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Registro} from "./pages/registro/Registro.tsx";
 import {Login} from "./pages/registro/Login.tsx";
 import {StudyPlanner} from "./pages/studyPlanner/StudyPlanner.tsx";
-import {Home} from "./pages/studyPlanner/dashboard/Home/Home.tsx";
-import {Tareas} from "./pages/studyPlanner/dashboard/Tareas/Tareas.tsx";
-import {Curso} from "./pages/studyPlanner/dashboard/Curso/Curso.tsx";
-import {Asignaturas} from "./pages/studyPlanner/dashboard/Asignaturas/Asignaturas.tsx";
-import {Calendario} from "./pages/studyPlanner/dashboard/Calendario/Calendario.tsx";
-import {Notas} from "./pages/studyPlanner/dashboard/Notas/Notas.tsx";
-import {Examenes} from "./pages/studyPlanner/dashboard/Examenes/Examenes.tsx";
-import {FormCreate} from "./pages/studyPlanner/dashboard/Curso/FormCreate.tsx";
-import {FormCreateA} from "./pages/studyPlanner/dashboard/Asignaturas/FormCreateA.tsx";
+import {Home} from "./pages/studyPlanner/dashboard/home/Home.tsx";
+import {Tasks} from "./pages/studyPlanner/dashboard/tasks/Tasks.tsx";
+import {Course} from "./pages/studyPlanner/dashboard/course/Course.tsx";
+import {Subjects} from "./pages/studyPlanner/dashboard/subjects/Subjects.tsx";
+import {Calendar} from "./pages/studyPlanner/dashboard/calendar/Calendar.tsx";
+import {Notes} from "./pages/studyPlanner/dashboard/notes/Notes.tsx";
+import {Exams} from "./pages/studyPlanner/dashboard/exams/Exams.tsx";
+import {CourseFormCreate} from "./pages/studyPlanner/dashboard/courseFormCreate/CourseFormCreate.tsx";
+import {SubjectFormCreate} from "./pages/studyPlanner/dashboard/subjectFormCreate/SubjectFormCreate.tsx";
 
 const router = createBrowserRouter([
   {
@@ -31,14 +31,24 @@ const router = createBrowserRouter([
     element: <StudyPlanner />,
     children: [
       { path: '', element: <Home /> },
-      { path: 'tareas', element: <Tareas /> },
-      { path: 'curso', element: <Curso /> },
-      { path: 'asignaturas', element: <Asignaturas /> },
-      { path: 'calendario', element: <Calendario /> },
-      { path: 'notas', element: <Notas /> },
-      { path: 'examenes', element: <Examenes /> },
-      { path: 'crear_curso', element: <FormCreate/> },
-      { path: 'crear_asignatura', element: <FormCreateA /> },
+      { path: 'tareas', element: <Tasks /> },
+      {
+        path: 'curso',
+        element: <Course /> ,
+/*        children: [
+          {
+            path: 'crear_curso',
+            element: <CourseFormCreate />
+          }
+        ]*/
+      },
+      { path: 'asignaturas', element: <Subjects /> },
+      { path: 'asignaturas/:id', element: <Subjects /> },
+      { path: 'calendario', element: <Calendar /> },
+      { path: 'notas', element: <Notes /> },
+      { path: 'examenes', element: <Exams /> },
+      { path: 'crear_curso', element: <CourseFormCreate/> },
+      { path: 'crear_asignatura', element: <SubjectFormCreate /> },
     ],
   },
 

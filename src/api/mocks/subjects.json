@@ -1,0 +1,226 @@
+[
+  {
+    "name": "DAW",
+    "description": "Despliegue de Aplicaciones Web",
+    "year": 1,
+    "semester": 1,
+    "color": "#EF5A3C"
+  },
+  {
+    "name": "Ingeniería del Software",
+    "description": "Diseño y desarrollo de software",
+    "year": 1,
+    "semester": 1,
+    "color": "#F5EDCC"
+  },
+  {
+    "name": "Bases de Datos",
+    "description": "Gestión y manipulación de datos",
+    "year": 1,
+    "semester": 1,
+    "color": "#6D6E5E"
+  },
+  {
+    "name": "Redes de Computadoras",
+    "description": "Configuración y administración de redes",
+    "year": 1,
+    "semester": 1,
+    "color": "#3C5AEF"
+  },
+  {
+    "name": "Introducción a la Programación",
+    "description": "Principios básicos de programación",
+    "year": 1,
+    "semester": 1,
+    "color": "#8F6D5E"
+  },
+  {
+    "name": "Matemáticas para Computación",
+    "description": "Conceptos matemáticos aplicados a la computación",
+    "year": 1,
+    "semester": 1,
+    "color": "#4F8E42"
+  },
+  {
+    "name": "Sistemas Operativos",
+    "description": "Funcionamiento y administración de sistemas operativos",
+    "year": 1,
+    "semester": 2,
+    "color": "#3C5AEF"
+  },
+  {
+    "name": "Estructuras de Datos",
+    "description": "Organización y manipulación de datos",
+    "year": 1,
+    "semester": 2,
+    "color": "#8F6D5E"
+  },
+  {
+    "name": "Programación Avanzada",
+    "description": "Desarrollo de aplicaciones complejas",
+    "year": 1,
+    "semester": 2,
+    "color": "#4F8E42"
+  },
+  {
+    "name": "Arquitectura de Computadoras",
+    "description": "Estructura y funcionamiento de computadoras",
+    "year": 1,
+    "semester": 2,
+    "color": "#F5EDCC"
+  },
+  {
+    "name": "Inglés Técnico",
+    "description": "Comunicación técnica en inglés",
+    "year": 1,
+    "semester": 2,
+    "color": "#6D6E5E"
+  },
+  {
+    "name": "Diseño de Interfaces de Usuario",
+    "description": "Creación de interfaces amigables",
+    "year": 2,
+    "semester": 1,
+    "color": "#3C5AEF"
+  },
+  {
+    "name": "Programación Web Avanzada",
+    "description": "Desarrollo de aplicaciones web complejas",
+    "year": 2,
+    "semester": 1,
+    "color": "#8F6D5E"
+  },
+  {
+    "name": "Inteligencia Artificial",
+    "description": "Simulación de procesos de inteligencia humana",
+    "year": 2,
+    "semester": 1,
+    "color": "#4F8E42"
+  },
+  {
+    "name": "Análisis y Diseño de Algoritmos",
+    "description": "Optimización de algoritmos computacionales",
+    "year": 2,
+    "semester": 1,
+    "color": "#F5EDCC"
+  },
+  {
+    "name": "Seguridad Informática",
+    "description": "Protección de sistemas informáticos",
+    "year": 2,
+    "semester": 1,
+    "color": "#6D6E5E"
+  },
+  {
+    "name": "Programación Concurrente y Distribuida",
+    "description": "Desarrollo de aplicaciones multiusuario",
+    "year": 2,
+    "semester": 2,
+    "color": "#3C5AEF"
+  },
+  {
+    "name": "Sistemas de Información",
+    "description": "Análisis y desarrollo de sistemas de información",
+    "year": 2,
+    "semester": 2,
+    "color": "#8F6D5E"
+  },
+  {
+    "name": "Tecnologías Emergentes",
+    "description": "Exploración de nuevas tecnologías",
+    "year": 2,
+    "semester": 2,
+    "color": "#4F8E42"
+  },
+  {
+    "name": "Ética en la Informática",
+    "description": "Consideraciones éticas en el uso de la informática",
+    "year": 2,
+    "semester": 2,
+    "color": "#F5EDCC"
+  },
+  {
+    "name": "Desarrollo Ágil de Software",
+    "description": "Metodologías ágiles de desarrollo de software",
+    "year": 2,
+    "semester": 2,
+    "color": "#6D6E5E"
+  },
+  {
+    "name": "Diseño de Sistemas Distribuidos",
+    "description": "Arquitectura de sistemas distribuidos",
+    "year": 3,
+    "semester": 1,
+    "color": "#3C5AEF"
+  },
+  {
+    "name": "Ingeniería de Requisitos",
+    "description": "Análisis y gestión de requisitos de software",
+    "year": 3,
+    "semester": 1,
+    "color": "#8F6D5E"
+  },
+  {
+    "name": "Gestión de Proyectos de Software",
+    "description": "Planificación y dirección de proyectos de software",
+    "year": 3,
+    "semester": 1,
+    "color": "#4F8E42"
+  },
+  {
+    "name": "Auditoría Informática",
+    "description": "Evaluación y control de sistemas informáticos",
+    "year": 3,
+    "semester": 1,
+    "color": "#F5EDCC"
+  },
+  {
+    "name": "Desarrollo de Aplicaciones Móviles",
+    "description": "Creación de aplicaciones para dispositivos móviles",
+    "year": 3,
+    "semester": 1,
+    "color": "#6D6E5E"
+  },
+  {
+    "name": "Tecnología Blockchain",
+    "description": "Fundamentos y aplicaciones de la tecnología blockchain",
+    "year": 3,
+    "semester": 2,
+    "color": "#3C5AEF"
+  },
+  {
+    "name": "Big Data Analytics",
+    "description": "Análisis de grandes volúmenes de datos",
+    "year": 3,
+    "semester": 2,
+    "color": "#8F6D5E"
+  },
+  {
+    "name": "Computación Cuántica",
+    "description": "Principios y aplicaciones de la computación cuántica",
+    "year": 3,
+    "semester": 2,
+    "color": "#4F8E42"
+  },
+  {
+    "name": "Ciberseguridad Avanzada",
+    "description": "Defensa contra amenazas avanzadas en línea",
+    "year": 3,
+    "semester": 2,
+    "color": "#F5EDCC"
+  },
+  {
+    "name": "Desarrollo de Videojuegos",
+    "description": "Creación de juegos electrónicos",
+    "year": 3,
+    "semester": 2,
+    "color": "#6D6E5E"
+  },
+  {
+    "name": "Realidad Virtual y Aumentada",
+    "description": "Tecnologías inmersivas para experiencias virtuales",
+    "year": 3,
+    "semester": 2,
+    "color": "#3C5AEF"
+  }
+]

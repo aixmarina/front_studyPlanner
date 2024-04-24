@@ -1,0 +1,49 @@
+{
+  "id": 1,
+  "name": "Ingeniería del Software",
+  "description": "Diseño y desarrollo de software",
+  "year": 1,
+  "semester": 1,
+  "color": "#F5EDCC",
+  "units": [
+    {
+      "id": 1,
+      "name": "Tema 1",
+      "description": "Ciclo de Vida del Software",
+      "date_ini": "2023-09-18",
+      "date_fin": "2023-10-01",
+      "tasks": [
+        {
+          "id": 1,
+          "name": "Ejercicio 1",
+          "description": "Analizar y diseñar un programa usando tecnologías de Orientación a Objetos",
+          "deadline": "2023-09-28",
+          "state": "inProgress"
+        },
+        {
+          "id": 2,
+          "name": "Ejercicio 2",
+          "description": "Implementar el diseño del Ejercicio 1 en un lenguaje de programación específico",
+          "deadline": "2023-10-05",
+          "state": "pending"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Tema 2",
+      "description": "Gestión de Proyectos de Software",
+      "date_ini": "2023-10-02",
+      "date_fin": "2023-10-15",
+      "tasks": [
+        {
+          "id": 3,
+          "name": "Ejercicio 3",
+          "description": "Elaborar un plan de proyecto para un software específico",
+          "deadline": "2023-10-10",
+          "state": "pending"
+        }
+      ]
+    }
+  ]
+}
