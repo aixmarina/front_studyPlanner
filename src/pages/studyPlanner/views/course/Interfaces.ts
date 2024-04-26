@@ -1,5 +1,5 @@
 export interface CourseInterface {
-  id: string
+  id: number
   name: string
   study_center: string
   duration_years: number

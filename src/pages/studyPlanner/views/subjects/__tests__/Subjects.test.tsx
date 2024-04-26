@@ -1,19 +1,20 @@
 import {describe} from "vitest";
 import {render} from "@testing-library/react";
 import {Subjects} from "../Subjects.tsx";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {MemoryRouter} from "react-router-dom";
 import {screen} from "@testing-library/react";
 
 describe('Subjects', () => {
   it('renders correctly', () => {
     render(
-      <BrowserRouter>
+      <MemoryRouter><Subjects/></MemoryRouter>
+/*      <BrowserRouter>
         <Routes>
           <Route path={"/dashboard/subjects"} element={<Subjects />}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>*/
     )
     screen.debug()
-    screen.getByText('actualmente')
+    screen.getByText('Cursando actualmente')
   })
 })

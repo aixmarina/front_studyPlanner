@@ -2,7 +2,7 @@ import {Header} from "../components/Header.tsx";
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import subjectInfo from "../../../../api/mocks/subject.json"
-import {SubjectDetailsInterface, Unit} from "../types/Interfaces.ts";
+import {SubjectDetailsInterface} from "../types/Interfaces.ts";
 import {Button} from "../../../../components/button/Button.tsx";
 import {UnitsCard} from "./components/UnitsCard.tsx";
 
@@ -26,9 +26,10 @@ export const SubjectDetails = () => {
              <Button type={"secondary"}>Editar asignatura</Button>
            </Header>
          </div>
-         {subject.units.map((unit: Unit, index: number) => (
+         <UnitsCard units={subject.units} />
+        {/* {subject.units.map((unit: Unit, index: number) => (
            <UnitsCard unit={unit} key={index} />
-         ))}
+         ))}*/}
        </>
      ) : (
        <>

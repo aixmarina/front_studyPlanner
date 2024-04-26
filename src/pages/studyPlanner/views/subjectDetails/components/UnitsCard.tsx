@@ -2,10 +2,10 @@ import {Unit} from "../../types/Interfaces.ts";
 import {spanishFormatDate} from "../../../../../helper/dates/dates.ts";
 
 interface UnitsCardProps {
-  unit: Unit
+  units: Unit[]
 }
 
-export const UnitsCard = ({ unit }: UnitsCardProps) => {
+export const UnitsCard = ({ units }: UnitsCardProps) => {
   return (
     <>
       <section>
@@ -33,24 +33,28 @@ export const UnitsCard = ({ unit }: UnitsCardProps) => {
               </tr>
               </thead>
               <tbody>
-              <tr
-                className="bg-white border-b hover:bg-gray-50 ">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                  {unit.name}
-                </th>
-                <td className="px-6 py-4">
-                  {unit.description}
-                </td>
-                <td className="px-6 py-4">
-                  {spanishFormatDate(unit.date_ini)}
-                </td>
-                <td className="px-6 py-4">
-                  {spanishFormatDate(unit.date_fin)}
-                </td>
-                <td className="px-6 py-4 text-right">
-                  <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
+              {units.map((unit: Unit, index: number) => (
+                <tr
+                  key={index}
+                  className="bg-white border-b hover:bg-gray-50"
+                >
+                  <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                    {unit.name}
+                  </th>
+                  <td className="px-6 py-4">
+                    {unit.description}
+                  </td>
+                  <td className="px-6 py-4">
+                    {spanishFormatDate(unit.date_ini)}
+                  </td>
+                  <td className="px-6 py-4">
+                    {spanishFormatDate(unit.date_fin)}
+                  </td>
+                  <td className="px-6 py-4 text-right">
+                    <a href="#" className="font-medium text-primary hover:underline">Edit</a>
+                  </td>
+                </tr>
+              ))}
               </tbody>
             </table>
           </div>

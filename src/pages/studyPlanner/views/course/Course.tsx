@@ -1,22 +1,32 @@
 import {Button} from "../../../../components/button/Button.tsx";
 import {useEffect, useState} from "react";
 import {CourseInterface} from "./Interfaces.ts";
-import courseData from "../../../../api/mocks/course.json"
 import {Header} from "../components/Header.tsx";
 import {EmptySection} from "../components/EmptySection.tsx";
 import {numberToOrdinal} from "../utils.ts";
+import useFetch from "../../../../helper/customHooks/useFetch.ts";
 
 export const Course = () => {
   const [course, setCourse] = useState<CourseInterface | null>(null)
-
+  const courseId = 1
+  const { loading, error, value } = useFetch<CourseInterface>(
+    `http://127.0.0.1:8000/api/v1/courses/${courseId}`,
+    {},
+    [courseId]
+  )
    useEffect(() => {
-     setCourse(courseData) //TODO: replace with a fetch call when the backend is ready
-   }, [] )
+     if (!loading && !error && value) {
+       setCourse(value)
+     }
+    /* setCourse(courseData) //TODO: replace with a fetch call when the backend is ready*/
+   }, [loading, error, value] )
 
   return(
     <section className="p-5 flex flex-col flex-grow">
       <Header title="Mi curso" subtitle="Toda la información sobre tu curso aquí" />
       <div className="flex items-center flex-col flex-grow justify-center mt-4">
+        { loading && <div>Cargando los datos...</div>}
+        {error && <div>Error: {error.message}</div>}
         { course ? (
           <>
             <div className="flex gap-5">

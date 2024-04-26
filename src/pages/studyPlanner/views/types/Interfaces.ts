@@ -10,6 +10,7 @@ export interface EmptySectionProps  extends HeaderProps{
 }
 
 export interface SubjectInterface {
+  id ?: number
   name: string;
   description: string;
   year: number;
