@@ -13,9 +13,9 @@ export const Footer = () => {
         </div>
         <div className="mb-6">
           <h5 className="text-lg font-bold mb-4 text-dark">Cuenta</h5>
-          <a href="#" className="text-primary hover:underline">Registrarse</a>
+          <a href="/register" className="text-primary hover:underline">Registrarse</a>
           <span className="mx-2">·</span>
-          <a href="#" className="text-primary hover:underline">Iniciar Sesión</a>
+          <a href="/login" className="text-primary hover:underline">Iniciar Sesión</a>
         </div>
       </div>
       <hr className="border-dark my-4"/>

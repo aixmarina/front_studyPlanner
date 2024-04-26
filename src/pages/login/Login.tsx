@@ -1,4 +1,4 @@
-import {Button} from "../../components/Button.tsx";
+import {Button} from "../../components/button/Button.tsx";
 import {Link} from "react-router-dom";
 import {Form} from "../../components/Form.tsx";
 
@@ -40,7 +40,6 @@ export const Login = () => {
             </div>
             <hr className="mb-6 border-t"/>
             <div className="text-center">
-
               <Link to={"/"}
                 className="inline-block text-sm text-gray-700 align-baseline hover:text-primary">
                 ¿Has olvidado tu contraseña?
@@ -49,7 +48,7 @@ export const Login = () => {
             <div className="text-center">
               <Link
                 className="inline-block text-sm text-gray-700 align-baseline hover:text-primary"
-                to={"/registro"}>
+                to="/register">
                 ¿No tienes una cuenta? ¡Regístrate!
               </Link>
             </div>

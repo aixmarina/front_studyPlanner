@@ -1,4 +1,4 @@
-import {Button} from "../../components/Button.tsx";
+import {Button} from "../../components/button/Button.tsx";
 import {Link} from "react-router-dom";
 
 export const Navbar = () => {
@@ -11,10 +11,10 @@ export const Navbar = () => {
           <img src="/StudyPlanner.svg" alt="logo"/>
         </div>
         <div className="flex gap-5">
-          <Link to={ "/registro" }>
+          <Link to="/register">
             <Button type="primary">Registrarse</Button>
           </Link>
-          <Link to={ "/login" }>
+          <Link to="/login">
             <Button type="secondary">Iniciar Sesión</Button>
           </Link>
         </div>

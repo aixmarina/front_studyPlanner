@@ -1,5 +1,5 @@
 import {Form} from "../../../../components/Form.tsx";
-import {Button} from "../../../../components/Button.tsx";
+import {Button} from "../../../../components/button/Button.tsx";
 import {ChangeEvent, useState} from "react";
 
 export const SubjectFormCreate = () => {

@@ -1,4 +1,4 @@
-import {Button} from "../../../../components/Button.tsx";
+import {Button} from "../../../../components/button/Button.tsx";
 import {useEffect, useState} from "react";
 import {CourseInterface} from "./Interfaces.ts";
 import courseData from "../../../../api/mocks/course.json"
@@ -42,7 +42,7 @@ export const Course = () => {
         ) : (
           <>
             <EmptySection titleButton="Añadir curso" title="No estás matriculado en ningún curso."
-                          subtitle="La información sobre tu curso aparecerá aquí." url="crear_curso"/>
+                          subtitle="La información sobre tu curso aparecerá aquí." url="/course/createCourse"/>
           </>
         )}
       </div>

@@ -3,7 +3,7 @@ import {EmptySection} from "../components/EmptySection.tsx";
 import {useEffect, useState} from "react";
 import subjectsInfo from "../../../../api/mocks/subjects.json";
 import cursoInfo from "../../../../api/mocks/course.json";
-import { SubjectCard } from "./components/SubjectCard.tsx";
+import { SubjectCard } from "./components/subjectCard/SubjectCard.tsx";
 import {PlusIcon} from "../../../../components/PlusIcon.tsx";
 import {Link} from "react-router-dom";
 import {numberToOrdinal} from "../utils.ts";
@@ -36,13 +36,13 @@ export const Subjects = () => {
     <section className="p-5 flex flex-col flex-grow">
       <Header title="Mis Subjects" subtitle="Todas tus asignaturas a simple vista"/>
       {/* if there is no subject*/}
-      {subjects ? (
+      {subjects?.length !== 0 ? (
         <>
           <div>
             <div className="flex justify-between items-center mb-3">
               <h2 className="font-semibold text-xl mb-4">Cursando actualmente</h2>
-              <Link to="/dashboard/crear_asignatura" className="hover:scale-125 transition ease-in-out">
-                <PlusIcon/>
+              <Link to="/dashboard/subjects/createSubject" className="hover:scale-125 transition ease-in-out">
+                <PlusIcon />
               </Link>
             </div>
             <div className="grid grid-cols-5 gap-3">
@@ -67,7 +67,7 @@ export const Subjects = () => {
         <>
           <div className="flex items-center flex-col flex-grow justify-center mt-4">
             <EmptySection titleButton="Añadir tu primera asignatura" title="No has creado ninguna asignatura aún."
-                          subtitle="La información sobre todas tus asignaturas aparecerá aquí." url="crear_asignatura"/>
+                          subtitle="La información sobre todas tus asignaturas aparecerá aquí." url="/dashboard/subjects/createSubject"/>
           </div>
         </>
       )}

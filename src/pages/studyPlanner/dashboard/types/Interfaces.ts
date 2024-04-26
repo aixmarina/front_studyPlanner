@@ -1,6 +1,7 @@
 export interface HeaderProps {
   title: string
   subtitle: string
+  children?: React.ReactNode
 }
 
 export interface EmptySectionProps  extends HeaderProps{
@@ -15,15 +16,22 @@ export interface SubjectInterface {
   semester: number;
   color: string;
 }
+/*
+export enum State {
+  pending = "PENDING",
+  inProgress = "INPROGRESS",
+  completed = "COMPLETED",
+}*/
 
 export interface Task {
   id: number;
   name: string;
   description: string;
   deadline: string;
-  /*
-    state: "pending" | "inProgress" | "completed"; //TODO: uncomment it when the backend is ready
-  */
+/*  state: State*/
+/*
+  state: "pending" | "inProgress" | "completed"; //TODO: uncomment it when the backend is ready
+*/
   state: string
 }
 

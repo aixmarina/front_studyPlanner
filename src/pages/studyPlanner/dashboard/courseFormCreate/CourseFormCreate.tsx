@@ -1,5 +1,5 @@
 import {Form} from "../../../../components/Form.tsx";
-import {Button} from "../../../../components/Button.tsx";
+import {Button} from "../../../../components/button/Button.tsx";
 
 export const CourseFormCreate = () => {
   return (
@@ -48,7 +48,6 @@ export const CourseFormCreate = () => {
             <option value="cuatri">Cuatrimestres</option>
           </select>
         </div>
-
       </div>
       <div className="mb-4 md:flex md:justify-between">
         <div className="mb-4 md:mr-2 md:mb-0 flex-1">
@@ -72,9 +71,8 @@ export const CourseFormCreate = () => {
           />
         </div>
       </div>
-
       <div className="mb-6 text-center">
-        <Button type="primary" classes="w-full focus:outline-none focus:shadow-outline">Guarda tu curso</Button>
+        <Button type="primary" className="w-full focus:outline-none focus:shadow-outline">Guarda tu curso</Button>
       </div>
     </Form>
   )

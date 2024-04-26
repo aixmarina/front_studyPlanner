@@ -1,6 +1,6 @@
 import Empty from "../../../../assets/empty.png";
 import {Link} from "react-router-dom";
-import {Button} from "../../../../components/Button.tsx";
+import {Button} from "../../../../components/button/Button.tsx";
 import {EmptySectionProps} from "../types/Interfaces.ts";
 
 export const EmptySection = ({title, subtitle, titleButton, url}: EmptySectionProps) => {
