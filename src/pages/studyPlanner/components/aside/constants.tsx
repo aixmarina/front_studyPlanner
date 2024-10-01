@@ -3,8 +3,6 @@ import CourseIcon from "./icons/CourseIcon.tsx";
 import SubjectsIcon from "./icons/SubjectsIcon.tsx";
 import TasksIcon from "./icons/TasksIcon.tsx";
 import CalendarIcon from "./icons/CalendarIcon.tsx";
-import NotesIcon from "./icons/NotesIcon.tsx";
-import ExamsIcon from "./icons/ExamsIcon.tsx";
 import {NavigationInterface} from "./Interfaces.ts";
 
 export const getNavigationData = (): NavigationInterface[] => [
@@ -33,14 +31,4 @@ export const getNavigationData = (): NavigationInterface[] => [
     link: '/dashboard/calendar',
     icon: <CalendarIcon />
   },
-  {
-    title: "Notas",
-    link: '/dashboard/notes',
-    icon: <NotesIcon />
-  },
-  {
-    title: "Exámenes",
-    link: '/dashboard/exams',
-    icon: <ExamsIcon />
-  }
 ]

@@ -16,6 +16,9 @@ export const SubjectCard = ({ subject }: Props) => {
         <h3 className={`text-sm text-gray-700`}>{subject.description}</h3>
         <h3 className={`text-black font-light text-lg`}>{subject.name}</h3>
       </div>
+      <div>
+        
+      </div>
     </Link>
   )
 }

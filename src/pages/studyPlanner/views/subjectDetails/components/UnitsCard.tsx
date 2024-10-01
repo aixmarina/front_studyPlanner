@@ -1,5 +1,5 @@
 import {Unit} from "../../types/Interfaces.ts";
-import {spanishFormatDate} from "../../../../../helper/dates/dates.ts";
+import {getSpanishFormatDate} from "../../../../../helper/dates/dates.ts";
 
 interface UnitsCardProps {
   units: Unit[]
@@ -45,10 +45,10 @@ export const UnitsCard = ({ units }: UnitsCardProps) => {
                     {unit.description}
                   </td>
                   <td className="px-6 py-4">
-                    {spanishFormatDate(unit.date_ini)}
+                    {getSpanishFormatDate(unit.date_ini)}
                   </td>
                   <td className="px-6 py-4">
-                    {spanishFormatDate(unit.date_fin)}
+                    {getSpanishFormatDate(unit.date_fin)}
                   </td>
                   <td className="px-6 py-4 text-right">
                     <a href="#" className="font-medium text-primary hover:underline">Edit</a>

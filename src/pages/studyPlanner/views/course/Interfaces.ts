@@ -1,5 +1,5 @@
 export interface CourseInterface {
-  id: number
+  id?: number
   name: string
   study_center: string
   duration_years: number
@@ -8,4 +8,5 @@ export interface CourseInterface {
   last_year: number
   actual_year: number
   actual_semester: number
+  user_id?: number
 }

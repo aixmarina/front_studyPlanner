@@ -1,16 +1,48 @@
 import {Form} from "../../../../components/Form.tsx";
 import {Button} from "../../../../components/button/Button.tsx";
-import {ChangeEvent, useState} from "react";
+import {ChangeEvent, FormEvent, useState} from "react";
+import {useCurrentUser} from "../../../../contexts/CurrentUserContext.tsx";
+import axios from "../../../../api/axios.ts";
+import {useNavigate} from "react-router-dom";
 
 export const SubjectFormCreate = () => {
-  const [selectedColor, setSelectedColor] = useState<string>("#EF5A3C")
+  const { course } = useCurrentUser()
+  const navigate = useNavigate()
 
-  const handleColorChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setSelectedColor(event.target.value)
+  const [formData, setFormData] = useState({
+    name: '',
+    description: '',
+    year: 1,
+    semester: 1,
+    color: '#EF5A3C',
+    course_id: course?.id
+  })
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = event.target
+
+    setFormData({
+      ...formData,
+      [name]: value
+    })
+  }
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+
+    if(course) {
+      try {
+        console.log(formData)
+        await axios.post('v1/subjects', formData)
+        navigate('/dashboard/subjects')
+      } catch (error) {
+        console.error(error)
+      }
+    }
   }
 
   return (
-    <Form title="Introduce la información de tu asignatura">
+    <Form title="Introduce la información de tu asignatura" onSubmit={handleSubmit}>
       <div className="mb-4 md:flex md:justify-between gap-3">
         <div className="mb-4">
           <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="nombre">
@@ -21,6 +53,9 @@ export const SubjectFormCreate = () => {
             id="nombre"
             type="text"
             placeholder="DAW"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
           />
         </div>
         <div className="mb-4 flex-1">
@@ -32,6 +67,9 @@ export const SubjectFormCreate = () => {
             id="desc"
             type="text"
             placeholder="Despligue de Aplicaciones Web"
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
           />
         </div>
       </div>
@@ -44,24 +82,30 @@ export const SubjectFormCreate = () => {
             className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border  rounded shadow focus:outline-none focus:shadow-outline"
             id="año_cursa"
             type="number"
+            name="year"
+            value={formData.year}
+            onChange={handleChange}
           />
         </div>
         <div className="md:ml-2 flex-1">
           <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="eval_cursa">
-            {/*Semestre should be dynamic, it would be semestre or cuatrimestre */}
             Semestre en el que se cursa:
           </label>
-          <select id="eval_cursa" name="eval_cursa"
-                  className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow focus:outline-none focus:shadow-outline">
+          <select id="eval_cursa" name="semester"
+                  className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow focus:outline-none focus:shadow-outline"
+                  value={formData.semester}
+                  onChange={handleChange}
+          >
             <option value="">Escoge una opción</option>
             <option value="1">1</option>
             <option value="2">2</option>
+            <option value="2">1 y 2</option>
           </select>
         </div>
       </div>
       <div className="mb-4">
         <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="color">Selecciona un color para tu asignatura:</label>
-        <input type="color" id="color" name="color" value={selectedColor} onChange={handleColorChange}/>
+        <input type="color" id="color" name="color" value={formData.color} onChange={handleChange}/>
       </div>
       <div className="mb-6 text-center">
         <Button type="primary" className="w-full focus:outline-none focus:shadow-outline">Guarda tu asignatura</Button>

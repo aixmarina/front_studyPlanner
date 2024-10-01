@@ -16,24 +16,22 @@ export interface SubjectInterface {
   year: number;
   semester: number;
   color: string;
+  tasks: Task[]
 }
-/*
+
 export enum State {
-  pending = "PENDING",
-  inProgress = "INPROGRESS",
-  completed = "COMPLETED",
-}*/
+  pending = "pending",
+  inProgress = "inProgress",
+  complete = "complete",
+}
 
 export interface Task {
   id: number;
   name: string;
   description: string;
   deadline: string;
-/*  state: State*/
-/*
-  state: "pending" | "inProgress" | "completed"; //TODO: uncomment it when the backend is ready
-*/
-  state: string
+  state: State;
+  subject_id: number;
 }
 
 export interface Unit {

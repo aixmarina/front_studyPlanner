@@ -8,8 +8,10 @@ export const Path = {
   subjects: '/dashboard/subjects/',
   subject: '/dashboard/subjects/:idSubject',
   calendar: '/dashboard/calendar',
-  notes: '/dashboard/notes',
-  exams: '/dashboard/exams',
   createSubject: '/dashboard/subjects/createSubject',
-  createCourse: '/dashboard/courses/createCourse',
+  editSubject: '/dashboard/subjects/editSubject',
+  createCourse: '/dashboard/course/createCourse',
+  createTask: '/dashboard/tasks/createTask',
+  editCourse: '/dashboard/course/editCourse',
+  editTask: '/dashboard/tasks/editTask/:idTask',
 }

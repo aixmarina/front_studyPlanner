@@ -1,32 +1,38 @@
 import {Button} from "../../../../components/button/Button.tsx";
-import {useEffect, useState} from "react";
-import {CourseInterface} from "./Interfaces.ts";
 import {Header} from "../components/Header.tsx";
 import {EmptySection} from "../components/EmptySection.tsx";
 import {numberToOrdinal} from "../utils.ts";
-import useFetch from "../../../../helper/customHooks/useFetch.ts";
+import {useCurrentUser} from "../../../../contexts/CurrentUserContext.tsx";
+import {useEffect} from "react";
+import {Link} from "react-router-dom";
+import axios from "../../../../api/axios.ts";
 
 export const Course = () => {
-  const [course, setCourse] = useState<CourseInterface | null>(null)
-  const courseId = 1
-  const { loading, error, value } = useFetch<CourseInterface>(
-    `http://127.0.0.1:8000/api/v1/courses/${courseId}`,
-    {},
-    [courseId]
-  )
-   useEffect(() => {
-     if (!loading && !error && value) {
-       setCourse(value)
-     }
-    /* setCourse(courseData) //TODO: replace with a fetch call when the backend is ready*/
-   }, [loading, error, value] )
+
+  const { course, user, fetchCourseData, setCourse } = useCurrentUser()
+
+  useEffect( () => {
+    const handleCourseData = async () => {
+      if(user)  await fetchCourseData(user.id)
+    }
+    handleCourseData()
+  }, [user])
+
+  const handleDeleteButton = async () => {
+    if(course) {
+      try {
+        await axios.delete(`v1/courses/${course.id}`)
+        setCourse(null)
+      } catch (error){
+        console.log(error)
+      }
+    }
+  }
 
   return(
     <section className="p-5 flex flex-col flex-grow">
       <Header title="Mi curso" subtitle="Toda la información sobre tu curso aquí" />
       <div className="flex items-center flex-col flex-grow justify-center mt-4">
-        { loading && <div>Cargando los datos...</div>}
-        {error && <div>Error: {error.message}</div>}
         { course ? (
           <>
             <div className="flex gap-5">
@@ -45,14 +51,17 @@ export const Course = () => {
                   <p><span className="font-semibold text-dark">Año: </span>{numberToOrdinal(course?.actual_year)}</p>
                   <p><span className="font-semibold text-dark">Semestre: </span> {course.actual_semester}</p>
                 </div>
-                <Button type="secondary">Editar</Button>
+                <Link to="/dashboard/course/editCourse">
+                  <Button type="secondary">Editar</Button>
+                </Link>
+                <Button type="danger" onClickHandler={handleDeleteButton}>Eliminar</Button>
               </div>
             </div>
           </>
         ) : (
           <>
             <EmptySection titleButton="Añadir curso" title="No estás matriculado en ningún curso."
-                          subtitle="La información sobre tu curso aparecerá aquí." url="/course/createCourse"/>
+                          subtitle="La información sobre tu curso aparecerá aquí." url="course/createCourse"/>
           </>
         )}
       </div>
